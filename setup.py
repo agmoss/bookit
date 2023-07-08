@@ -10,7 +10,7 @@ setup(
     author_email="andrew@m0ss.dev",
     python_requires=">=3.7",
     name="bookit",
-    version="0.0.1",
+    version="0.0.2",
     description="Doc site generator",
     classifiers=[
         "Development Status :: 3 - Alpha",
