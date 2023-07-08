@@ -57,6 +57,9 @@ def process_files_in_dir(
         new_dir = dirpath.replace(repo_path, book_path, 1)
 
         if filename.endswith(".md"):
+            # TODO: Refactor this
+            if not os.path.exists(new_dir):
+                os.makedirs(new_dir)
             new_file_path = os.path.join(new_dir, filename)
             shutil.copy(file_path, new_file_path)
             continue
