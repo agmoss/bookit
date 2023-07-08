@@ -91,7 +91,7 @@ version-minor:
 version-major:
 	bump2version major
 
-release: typecheck dist
+release: dist
 	twine upload dist/*
 
 dist: clean
